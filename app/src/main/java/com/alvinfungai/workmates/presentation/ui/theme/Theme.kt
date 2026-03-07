@@ -1,4 +1,4 @@
-package com.alvinfungai.workmates.ui.theme
+package com.alvinfungai.workmates.presentation.ui.theme
 
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable

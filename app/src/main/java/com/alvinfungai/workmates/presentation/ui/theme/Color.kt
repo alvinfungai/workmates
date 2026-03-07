@@ -1,4 +1,4 @@
-package com.alvinfungai.workmates.ui.theme
+package com.alvinfungai.workmates.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
