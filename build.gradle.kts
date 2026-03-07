@@ -4,4 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose) apply false
     alias(libs.plugins.hilt) apply false
     alias(libs.plugins.ksp) apply false
+
+    // Add the dependency for the Google services Gradle plugin
+    alias(libs.plugins.google.services) apply false
 }

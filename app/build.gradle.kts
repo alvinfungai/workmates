@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
+    // Add the Google services Gradle plugin
+    alias(libs.plugins.google.services)
 }
 
 android {
@@ -58,7 +60,22 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
-    // DI
+    // DI - Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+
+    // Import the Firebase BoM
+    implementation(platform(libs.firebase.bom))
+
+    // Authentication
+    implementation(libs.firebase.auth.ktx)
+
+    // Firestore
+    implementation(libs.firebase.firestore.ktx)
+
+    // Coroutine extension for play services
+    implementation(libs.kotlinx.coroutines.play.services)
+
+    implementation(libs.androidx.hilt.navigation.compose)
+
 }
