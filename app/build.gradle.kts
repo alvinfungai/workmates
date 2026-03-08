@@ -76,4 +76,13 @@ dependencies {
     // Hilt Compose navigation
     implementation(libs.androidx.hilt.navigation.compose)
 
+    // MockK
+    testImplementation(libs.mockk)
+
+    // Coroutine testing
+    testImplementation(libs.kotlinx.coroutines.test)
+
+    // Flow testing
+    testImplementation(libs.turbine)
+
 }

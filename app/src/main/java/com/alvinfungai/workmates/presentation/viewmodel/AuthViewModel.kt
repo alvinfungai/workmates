@@ -31,13 +31,21 @@ class AuthViewModel @Inject constructor(
 
     fun login(email: String, password: String) {
         viewModelScope.launch {
-            repo.login(email, password)
+            try {
+                repo.login(email, password)
+            } catch (e: Exception) {
+                // update error state
+            }
         }
     }
 
     fun signup(email: String, password: String) {
         viewModelScope.launch {
-            repo.signup(email, password)
+            try {
+                repo.signup(email, password)
+            } catch (e: Exception) {
+                // update error state
+            }
         }
     }
 
