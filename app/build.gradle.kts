@@ -64,18 +64,16 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
 
-    // Import the Firebase BoM
-    implementation(platform(libs.firebase.bom))
+    // Firebase Authentication
+    implementation(libs.firebase.auth)
 
-    // Authentication
-    implementation(libs.firebase.auth.ktx)
-
-    // Firestore
-    implementation(libs.firebase.firestore.ktx)
+    // Firebase Firestore
+    implementation(libs.firebase.firestore)
 
     // Coroutine extension for play services
     implementation(libs.kotlinx.coroutines.play.services)
 
+    // Hilt Compose navigation
     implementation(libs.androidx.hilt.navigation.compose)
 
 }

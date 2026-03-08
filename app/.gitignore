@@ -1,1 +1,11 @@
+# IDE
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+local.properties
+
+# Build
 /build
+/captures
